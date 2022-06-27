@@ -12,18 +12,13 @@
     </nav>
     <main>
         <h2>Vacation Contest Sign-Up Form</h2>
-        <form method="get" action="results.html"> <!-- TODO: Set Action and Method Properties -->
+        <form method="get" action="results.html">
             <div>
                 <label for="firstname">Your First Name</label>
                 <input type="text" id="firstname" name="firstname">
-                <!-- TODO: Create a "lastname" input with type "text" -->
                 <label for="lastname">Your Last Name</label>
                 <input type="text" id="lastname" name="lastname">
             </div>
-            <!-- TODO: Make fieldset and legend -->
-            <!-- Todo: Email Input -->
-            <!-- Todo: Street Address Input -->
-            <!-- Todo: City, State, and Zip Inputs -->
             <fieldset>
                 <legend>Contact Info</legend>
                 <label for="email">Your email</label>
@@ -85,10 +80,6 @@
                     <option value="WY">Wyoming</option>
                 </select>   
             </fieldset>
-            <!-- TODO: Second fieldset -->
-            <!-- TODO: Radio buttons for selecting preferred destination -->
-            <!-- TODO: Color input for selecting favorite color -->
-            <!-- TODO: Checkboxes for selecting extra add-ons -->
             <fieldset>
                 <legend>Your Preferences</legend>
                 <h3>Choose your Location</h3>
@@ -108,8 +99,35 @@
                     <input type="radio" id="new-zealand" name="location" value="New Zealand">
                     <label for="new-zealand">New Zealand</label>
                 </div>
+                <div>
+                    <h3>Choose your favorite color</h3>
+                    <input type="color" name="color">
+                </div>
+                <div>
+                    <h3>What luxuries do you like</h3>
+                    <div>
+                         Sauna
+                        <input type="checkbox" value="sauna" name="luxury">
+                    </div>
+                    <div>
+                        Hot-tub
+                        <input type="checkbox" value="hot-tub" name="luxury">
+                    </div>
+                    <div>
+                        Gym
+                        <input type="checkbox" value="gym" name="luxury">
+                    </div>
+                    <div>
+                        Massage Therapy
+                        <input type="checkbox" value="massage-therapy" name="luxury">
+                    </div>
+                    <div>
+                        Ice Cream Machine
+                        <input type="checkbox" value="ice-cream-machine" name="luxury">
+                    </div> 
+                </div>
             </fieldset>
-            <!-- TODO: Submit Button -->
+            <input type="submit" value="Enter the contest">
         </form>
     </main>
     <footer>
